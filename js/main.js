@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    $('.category').click((e) => {
+    $('.category__btn').click((e) => {
         let currentElem = $(e.target);
         $('#burgers').hide();
         $('#fries').hide();
@@ -83,6 +83,12 @@ $(document).ready(() => {
         centerMode: false,
         infinite: false,
         focusOnSelect: true
+    });
+
+    $('.reviews-wrap').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
     });
 
 });

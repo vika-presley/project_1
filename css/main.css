@@ -290,14 +290,15 @@ body {
     color: rgb(51, 23, 3);
 }
 
-.category-wrap {
+.category {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .stock__categories {
     margin: 30px auto;
-    text-align: center;
+
 }
 
 .category__btn {
@@ -331,7 +332,7 @@ body {
     margin: 0 auto;
 }
 
-.products.stock__products:focus{
+.products.stock__products:focus {
     outline: none;
 }
 
@@ -340,7 +341,7 @@ body {
     justify-content: space-between;
 }
 
-.product:focus{
+.product:focus {
     outline: none;
 }
 
@@ -352,7 +353,7 @@ body {
     align-items: center;
 }
 
-.product__img{
+.product__img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -405,7 +406,7 @@ body {
 }
 
 
-.stock__nav-wrap{
+.stock__nav-wrap {
     margin-top: 10px;
 }
 
@@ -419,37 +420,220 @@ body {
     opacity: 0.3;
 }
 
-.products-nav .products-nav__item:focus{
+.products-nav .products-nav__item:focus {
     outline: none;
 }
 
-.products-nav__item:hover{
+.products-nav__item:hover {
     cursor: pointer;
     opacity: 1;
 }
 
-.products-nav__img{
+.products-nav__img {
     max-height: 100%;
     max-width: 100%;
 }
 
-.products-nav__item.slick-current{
+.products-nav__item.slick-current {
     opacity: 1;
 }
 
-.slick-next:before{
+.stock .slick-next:before {
     content: url("../images/products-next-arrow.png");
 }
 
-.slick-prev:before {
+.stock .slick-prev:before {
     content: url("../images/products-prev-arrow.png");
 }
 
-.slick-next{
+.stock .slick-next {
     left: 600px;
 }
 
-.fries-wrap, .sauces-wrap, .drinks-wrap{
-    display:none;
+.fries-wrap, .sauces-wrap, .drinks-wrap {
+    display: none;
 }
+
+.info {
+    background: no-repeat url("../images/info-bg.png");
+    background-position: top center;
+    background-size: cover;
+}
+
+.info__title {
+    padding: 130px 0 60px 0;
+}
+
+.reviews-wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.reviews-wrap .review {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 50px;
+    justify-content: space-between;
+
+}
+
+.review__img {
+    filter: grayscale(100%);
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.review__content {
+    width: 325px;
+}
+
+.review__title {
+    margin: 0 0 35px 0;
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(254, 254, 254);
+    text-transform: uppercase;
+}
+
+
+.review__text {
+    font-size: 16px;
+    font-family: "RobotoLight", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 25px;
+}
+
+.slick-initialized .slick-slide{
+    outline: 0;
+}
+
+.reviews-wrap .slick-next:before{
+    content: url("../images/review-next.png");
+}
+
+
+.reviews-wrap .slick-prev:before{
+    content: url("../images/review-prev.png");
+}
+
+.addresses {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.addresses__title {
+    margin: 150px 0 60px 0;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+}
+
+.address__wrap {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.address__sub-wrap {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    width: 470px;
+    padding-top: 5px;
+}
+
+.address__content {
+    margin-top: 25px;
+    text-align: left;
+    padding: 0 90px;
+}
+
+.address__icon {
+    vertical-align: middle;
+}
+
+.address__text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 15px;
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(247, 246, 246);
+}
+
+.address__btn {
+    margin: 40px auto 25px auto;
+    text-align: center;
+}
+
+.info__socials {
+    margin: 0 auto;
+    padding: 85px 0;
+    width: 1170px;
+}
+
+.insta {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+
+.insta__img {
+    width: 50px;
+    height: 50px;
+    fill: rgb(246, 165, 1);
+}
+
+.insta__text {
+    font-size: 20px;
+    font-family: "RobotoBlack", sans-serif;
+    text-transform: uppercase;
+    color: rgb(246, 165, 1);
+    margin-top: 30px;
+}
+
+.insta:hover .insta__text {
+    color: rgb(255, 255, 255);
+}
+
+.insta:hover .insta__img {
+    fill: rgb(255, 255, 255);
+}
+
+.footer{
+    background-color: rgb(18, 8, 1);
+    padding: 25px 0;
+    width: 100%;
+
+}
+
+.footer__content{
+    margin: 0;
+    font-size: 11px;
+    font-family: "RobotoThin", sans-serif;
+    color: rgb(188, 188, 188);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer__content_line{
+    margin: 0 7px;
+}
+
+
+
 
