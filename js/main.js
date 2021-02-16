@@ -91,4 +91,29 @@ $(document).ready(() => {
         slidesToScroll: 2
     });
 
+    $('.btn-booking').click(() => {
+        $('.reservation-bg').css('display', 'flex');
+    });
+
+    $('#close-modal, #reservation-bg').click((e) => {
+        if (e.target.id === 'reservation-bg' || e.target.id === 'close-modal') {
+            $('#reservation-bg').hide();
+        }
+    });
+
+    $('.reservation__btn > button').click(() => {
+        let name = $('#name');
+        let phone = $('#phone');
+        let count = $('#count');
+        let time = $('#time');
+
+
+        if (name.val() && count.val() && phone.val() && time.val()) {
+            $('.reservation__content').hide();
+            $('.reservation__sent').show();
+        } else {
+            $('#reserve-err').show();
+        }
+    });
+
 });
