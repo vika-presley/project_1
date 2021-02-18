@@ -88,7 +88,18 @@ $(document).ready(() => {
     $('.reviews-wrap').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive:[
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+        ]
     });
 
     $('.btn-booking').click(() => {
@@ -114,6 +125,18 @@ $(document).ready(() => {
         } else {
             $('#reserve-err').show();
         }
+    });
+
+    $('#burger').click(() => {
+        $('.header').toggleClass('menu-open');
+    });
+
+    $('.menu__item').click(() => {
+        $('.header').removeClass('menu-open');
+    });
+
+    $('#burger').click(() => {
+        $('.header .btn-wrap').toggleClass('main-btn');
     });
 
 });

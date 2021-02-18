@@ -40,8 +40,7 @@ body {
 }
 
 .main {
-    background: no-repeat url("../images/first-block-bg.png");
-    background-size: cover;
+    background: url("../images/first-block-bg.png");
     background-position: center;
     height: 908px;
 
@@ -236,9 +235,8 @@ body {
 
 .description {
     height: 1014px;
-    background: no-repeat url("../images/description_bg.png");
+    background:  url("../images/description_bg.png");
     background-position: center;
-    background-size: cover;
 }
 
 .block-title {
@@ -461,13 +459,13 @@ body {
 }
 
 .info {
-    background: no-repeat url("../images/info-bg.png");
+    background:  url("../images/info-bg.png");
     background-position: top center;
-    background-size: cover;
 }
 
 .info__title {
     padding: 130px 0 60px 0;
+    margin: 0;
 }
 
 .reviews-wrap {
@@ -587,7 +585,7 @@ body {
 
 .info__socials {
     margin: 0 auto;
-    padding: 85px 0;
+    padding: 80px 0;
     width: 1170px;
 }
 
@@ -610,6 +608,7 @@ body {
     text-transform: uppercase;
     color: rgb(246, 165, 1);
     margin-top: 30px;
+    text-align: center;
 }
 
 .insta:hover .insta__text {
@@ -745,6 +744,13 @@ body {
     margin-top: 20px;
     display: none;
     font-family: "RobotoRegular", sans-serif;
+}
+
+.burger{
+    display: none;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
 }
 
 
