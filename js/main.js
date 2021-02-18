@@ -135,7 +135,7 @@ $(document).ready(() => {
         $('.header').removeClass('menu-open');
     });
 
-    $('#burger').click(() => {
+    $('#burger, .menu__item').click(() => {
         $('.header .btn-wrap').toggleClass('main-btn');
     });
 

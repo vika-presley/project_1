@@ -282,13 +282,13 @@
 /*480-579*/
 @media screen and (max-width: 579px) {
 
-    .reservation-bg{
+    .reservation-bg {
         overflow: scroll;
         align-items: flex-start;
         padding-top: 20px;
     }
 
-    .reservation-bg__field{
+    .reservation-bg__field {
         max-width: 320px;
         padding: 25px;
         margin-bottom: 40px;
@@ -298,10 +298,9 @@
         margin: 30px 10px;
     }
 
-    .reservation__btn{
+    .reservation__btn {
         margin-bottom: 10px;
     }
-
 
 
     .header {
@@ -406,11 +405,11 @@
         padding: 120px 0 70px 0;
     }
 
-    .address__text{
+    .address__text {
         font-size: 16px;
     }
 
-    .review__content{
+    .review__content {
         width: 100%;
     }
 
@@ -421,18 +420,19 @@
 
 @media screen and (max-width: 476px) {
 
-    .header{
+    .header {
         padding-top: 10px;
     }
-    .header .btn-wrap{
+
+    .header .btn-wrap {
         display: none;
     }
 
-    .logo{
+    .logo {
         margin-left: 40px;
     }
 
-    .header .main-btn{
+    .header .main-btn {
         display: block;
         text-align: center;
         margin: 15px auto 5px auto;
@@ -440,13 +440,21 @@
 
     .stamp {
         width: 320px;
-        height: 110px;
-        line-height: 112px;
+        height: 100px;
+        line-height: 105px;
     }
 
-    .nav{
-        margin-top: 59px;
+    .nav {
+        margin-top: 58px;
         width: 100%;
+    }
+
+    .titles {
+        margin: 80px auto 0 auto;
+    }
+
+    .titles__btn {
+        margin-top: 80px;
     }
 
     .titles__slogan {
@@ -460,53 +468,102 @@
         padding: 135px 10px 0 10px;
     }
 
-    .feature__title{
-        font-size: 19px;
+    .features {
+        margin-top: -50px;
     }
 
-    .feature__text{
+    .feature__title {
+        font-size: 19px;
+        margin: 0 0 10px 0;
+    }
+
+    .feature__img-wrap {
+        margin: 0px auto 10px auto;
+    }
+
+    .feature__text {
         font-size: 17px;
     }
 
+    .features__content {
+        margin: 14px 0;
 
-    .category{
+    }
+
+    .category {
         flex-wrap: wrap;
     }
+
     .category__btn {
-        margin: 5px 15px;
+        margin: 5px 3px;
+        font-size: 14px;
+        padding: 5px 8px;
     }
 
-    .block-title{
+    .category__btn:nth-child(3) {
+        padding: 10px 15px;
+    }
+
+    .block-title {
         font-size: 25px;
     }
+
     .description__title {
-        padding-top: 135px;
+        padding-top: 150px;
     }
-    .description__text-title {
+
+    .description__inner .description__text-title {
         margin: 45px 0 40px 0;
         font-size: 25px;
         text-align: center;
     }
 
-    .description__text{
-        font-size: 15px;
+    .product__img-wrap{
+        width: 200px;
+    }
+    .product__title {
+        font-size: 20px;
+        margin: 15px auto 20px auto;
+        width: 280px;
     }
 
-    .address__content{
+    .product__description {
+        width: 249px;
+        text-align: center;
+        margin: 0 auto 20px auto;
+        line-height: 22px;
+    }
+
+    .properties__img {
+        width: 30px;
+    }
+
+    .description__text {
+        font-size: 15px;
+        text-indent: 15px;
+        margin: 15px 0;
+    }
+
+    .description__img-wrap {
+        max-width: 200px;
+    }
+
+    .address__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 5px;
+        padding: 0 5px;
 
     }
 
-    .address__text{
+    .address__text {
         margin: 10px 0 0 0;
     }
 
     .address__btn {
-        margin: 40px 20px 25px 20px;
+        margin: 40px 35px 25px 35px;
+
     }
 
 }
@@ -538,24 +595,40 @@
     }
 
     .features {
-        margin-top: -45px;
+        margin-top: -50px;
     }
 
     .features__content {
-        margin: 20px 0;
+        margin: 14px 0;
     }
 
     .block-title {
         font-size: 23px;
     }
 
+    .category__btn {
+        margin: 5px 10px;
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+
+    .category__btn:nth-child(3) {
+        padding: 10px 24px;
+    }
+
+    .product__title{
+        width: auto;
+    }
+
     .product__description {
         font-size: 12px;
+        width: 230px;
     }
 
     .product__title {
         font-size: 19px;
     }
+
     .properties__img {
         width: 30px;
     }
@@ -568,7 +641,7 @@
         margin-right: 5px;
     }
 
-    .info__title{
+    .info__title {
         padding-bottom: 55px;
     }
 
@@ -583,6 +656,7 @@
     .addresses__title {
         margin: 35px 0 50px 0;
     }
+
     .insta__text {
         font-size: 19px;
     }
